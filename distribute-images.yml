@@ -1,0 +1,8 @@
+---
+- hosts: web
+
+  tasks:
+    - name: Synchronize images on all web servers.
+      synchronize:
+        src: ./images
+        dest: /var/www/virtualHosts/www.achhome.net/html
